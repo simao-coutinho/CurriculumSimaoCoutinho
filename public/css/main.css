@@ -1,3 +1,4 @@
+/* region Variables */
 :root {
     /* 01 - TYPOGRAPHY */
     /* Font Size */
@@ -39,8 +40,9 @@
     --c-green: #28a745;
     --c-primary: #1864ab;
     --c-primary-darker: #0e3c67;
+    --c-primary-ligther: #e8f0f7;
     --c-text-color: #555;
-    --c-text-color-darker:#333;
+    --c-text-color-darker: #333;
 
     /* 05 - SHADOWS */
     /*
@@ -57,6 +59,7 @@ Medium: 11px
     /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 }
+
 /* endregion */
 
 /* region Starter Styles */
@@ -88,6 +91,7 @@ q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var 
 a, a:hover {
     text-decoration: none;
 }
+
 /* endregion */
 
 /* region Navigation */
@@ -115,17 +119,18 @@ a, a:hover {
     transition: all 0.3s;
 }
 
-.main-nav-link:hover, .main-nav-link:active {
+.main-nav-link:hover {
     color: var(--c-primary-darker);
 }
+
 /* endregion */
 
 /* region Info */
 .info-profile {
-    width: 800px;
-    margin: 100px auto;
+    max-width: 800px;
+    margin: 120px auto;
     background-color: var(--c-primary);
-    padding: 32px 48px 32px 86px;
+    padding: 32px 48px 32px 72px;
 
     border-radius: 8px;
     position: relative;
@@ -140,6 +145,10 @@ a, a:hover {
     border-radius: 8px;
     transform: scale(1.5);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.profile-data {
+    margin-left: 60px;
 }
 
 .name {
@@ -174,5 +183,97 @@ a, a:hover {
     color: white;
     margin-top: 1.6rem;
     margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .img-profile {
+        transform: scale(1);
+    }
+    .info-profile {
+        padding: 16px;
+    }
+    .profile-data {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+/* endregion */
+
+/* region Timeline */
+.sub-heading {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+
+.timeline-sub-heading {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    margin-top: 32px;;
+}
+
+.timeline-section {
+    padding: 120px 16px;
+    background-image: -webkit-linear-gradient(0deg, var(--c-primary) 0%, var(--c-primary-ligther) 100%);
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline .lines {
+    margin-top: 6px;
+}
+
+.timeline .dot {
+    width: 14px;
+    height: 14px;
+    background: #D1D6E6;
+    border-radius: 7px;
+}
+
+.timeline .line {
+    height: 103px;
+    width: 2px;
+    background: #D1D6E6;
+    margin-left: 5.3px;
+}
+
+.timeline .cards {
+    margin-left: 12px;
+}
+
+.timeline .card {
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 #eeeeee40;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 16px 32px;
+}
+
+.timeline .card .mid {
+    height: 71px;
+}
+
+.timeline .card h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 5px;
+    color: #2B2862;
+}
+
+.timeline .card p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B2862;
 }
 /* endregion */
