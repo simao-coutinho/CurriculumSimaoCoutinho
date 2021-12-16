@@ -40,7 +40,7 @@
     --c-green: #28a745;
     --c-primary: #1864ab;
     --c-primary-darker: #0e3c67;
-    --c-primary-ligther: #e8f0f7;
+    --c-primary-ligther: #8cb2d5;
     --c-text-color: #555;
     --c-text-color-darker: #333;
 
@@ -98,7 +98,7 @@ a, a:hover {
 /* region Navigation */
 .header {
     padding: 1.6rem 3.2rem;
-    background: var(--c-primary);
+    background-image: -webkit-linear-gradient(0deg, #5d93c4 0%, var(--c-primary) 100%);
 }
 
 .main-nav {
@@ -130,7 +130,7 @@ a, a:hover {
 .info-profile {
     max-width: 800px;
     margin: 120px auto;
-    background-color: var(--c-primary);
+    background-image: -webkit-linear-gradient(0deg, var(--c-primary) 0%, #5d93c4 100%);
     padding: 32px 48px 32px 72px;
 
     border-radius: 8px;
@@ -160,6 +160,15 @@ a, a:hover {
     color: #e6fcf5;
 }
 
+.profile-link {
+    color: #e6fcf5;
+    transition: all 0.3s;
+}
+
+.profile-link:hover {
+    color: white;
+}
+
 .role {
     font-size: 1.8rem;
     margin-bottom: 3.2rem;
@@ -174,6 +183,10 @@ a, a:hover {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+}
+
+.mail-icon {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(169deg) brightness(111%) contrast(100%);
 }
 
 .info-icon {
@@ -337,5 +350,24 @@ color: var(--c-primary);
     font-size: 16px;
     line-height: 22px;
     color: #2B2862;
+}
+/* endregion */
+
+/* region Gallery */
+.gallery {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.gallery-item {
+    margin-top: 20px;
+}
+
+figcaption {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
 }
 /* endregion */

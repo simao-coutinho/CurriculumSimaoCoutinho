@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simão Coutinho</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,11 +71,15 @@
                     </p>
                     <p class="info">
                         <ion-icon class="info-icon" name="call-outline"></ion-icon>
-                        +351 937 087 571
+                        <a href="tel:+351937087571" class="profile-link">
+                            +351 937 087 571
+                        </a>
                     </p>
                     <p class="info">
-                        <ion-icon class="info-icon" name="mail-outline"></ion-icon>
-                        simaopedrocoutinho@gmail.com
+                        <img src="img/icons/mail-outline.svg" width="16" alt="mail" class="mail-icon" />
+                        <a href="mailto:simaopedrocoutinho@gmail.com" class="profile-link">
+                            simaopedrocoutinho@gmail.com
+                        </a>
                     </p>
                     <p class="info">
                         <ion-icon class="info-icon" name="location-outline"></ion-icon>
@@ -80,7 +103,8 @@
             <h2 class="profile-heading">Acerca de mim</h2>
             <p class="profile-description">
                 Formado com distinção já conto com quase 5 anos de programação Android, Windows (C#) Swift (iOS) e
-                PHP com a framework Laravel.<br>Já conto com 10 aplicações nativas android (JAVA) e outras 10 iOS (SWIFT)
+                PHP com a framework Laravel.<br>Já conto com 10 aplicações nativas android (JAVA) e outras 10 iOS
+                (SWIFT)
                 publicadas e com 25 projetos web publicados.
             </p>
             <div class="row">
@@ -248,9 +272,31 @@
     </div>
 </section>
 
-<sction id="gallery" class="container">
-
-</sction>
+<section id="gallery" class="container">
+    <div class="gallery">
+        <h2 class="profile-heading text-center">Galeria</h2>
+        <div class="row justify-content-center">
+            <figure class="col-md-4 gallery-item">
+                <img src="img/certificates/ipmaia.jpg" class="img-fluid" alt="TPSI Ipmaia"/>
+                <figcaption>TPSI Ipmaia - Melhor Aluno</figcaption>
+            </figure>
+        </div>
+        <div class="row">
+            <figure class="col-md-4 gallery-item">
+                <img src="img/certificates/iOS.jpeg" class="img-fluid" alt="iOS Udemy"/>
+                <figcaption>Curso iOS - Certificado Udemy</figcaption>
+            </figure>
+            <figure class="col-md-4 gallery-item">
+                <img src="img/certificates/web.jpeg" class="img-fluid" alt="Web Udemy"/>
+                <figcaption>Curso Web - Certificado Udemy</figcaption>
+            </figure>
+            <figure class="col-md-4 gallery-item">
+                <img src="img/certificates/laravel.jpeg" class="img-fluid" alt="Laravel Udemy"/>
+                <figcaption>Curso Laravel - Certificado Udemy</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.js"></script>
