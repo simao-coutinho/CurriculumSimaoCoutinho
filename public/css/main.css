@@ -81,6 +81,7 @@ body {
     color: var(--c-text-color);
     font-weight: 400;
     line-height: 1;
+    background-color: #FBFBFB;
 }
 
 a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output,
@@ -138,6 +139,7 @@ a, a:hover {
     display: flex;
     align-items: center;
     gap: 86px;
+    box-shadow: 0 20px 80px 0 rgb(153 153 153 / 50%);
 }
 
 .img-profile {
@@ -196,6 +198,66 @@ a, a:hover {
         margin-top: 20px;
         margin-left: 0;
     }
+}
+
+.about-me {
+    margin-bottom: 120px;
+}
+
+.profile-heading {
+    color: #222;
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.profile-sub-heading {
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.profile-description {
+    max-width: 495px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.featured-box {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.featured-box ion-icon {
+    color: var(--c-primary);
+    font-size: 25px;
+}
+
+.featured-counter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.featured-box span {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+.profile-list li {
+font-size: 1.6rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.profile-list ion-icon {
+color: var(--c-primary);
 }
 /* endregion */
 
