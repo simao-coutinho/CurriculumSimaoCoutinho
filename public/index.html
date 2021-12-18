@@ -36,6 +36,13 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- Animations -->
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css" />
+    <script>
+        new WOW().init();
+    </script>
+
     <!-- Styles -->
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -56,7 +63,7 @@
     </nav>
 </header>
 <section class="container" id="info-profile">
-    <div class="info-profile">
+    <div class="info-profile wow fadeIn">
         <div class="row">
             <div class="col-md-5">
                 <img src="img/perfil.jpeg" class="img-profile" alt="Simão Coutinho"/>
@@ -100,29 +107,29 @@
 
     <div class="row about-me">
         <div class="col-md-6">
-            <h2 class="profile-heading">Acerca de mim</h2>
-            <p class="profile-description">
+            <h2 class="profile-heading wow fadeIn">Acerca de mim</h2>
+            <p class="profile-description wow fadeIn">
                 Formado com distinção já conto com quase 5 anos de programação Android, Windows (C#) Swift (iOS) e
                 PHP com a framework Laravel.<br>Já conto com 10 aplicações nativas android (JAVA) e outras 10 iOS
                 (SWIFT)
                 publicadas e com 25 projetos web publicados.
             </p>
             <div class="row">
-                <div class="col-md-4 mt-3">
+                <div class="col-md-4 mt-3 wow fadeIn">
                     <div class="featured-box">
                         <ion-icon name="logo-apple"></ion-icon>
                         <p class="featured-counter">10</p>
                         <span>Apps iOS Publicadas</span>
                     </div>
                 </div>
-                <div class="col-md-4 mt-3">
+                <div class="col-md-4 mt-3 wow fadeIn">
                     <div class="featured-box">
                         <ion-icon name="logo-android"></ion-icon>
                         <p class="featured-counter">10</p>
                         <span>Apps Android Publicadas</span>
                     </div>
                 </div>
-                <div class="col-md-4 mt-3">
+                <div class="col-md-4 mt-3 wow fadeIn">
                     <div class="featured-box">
                         <ion-icon name="earth-outline"></ion-icon>
                         <p class="featured-counter">25</p>
@@ -137,27 +144,27 @@
                 <div class="col-md-6">
                     <h3 class="profile-sub-heading">Uso diáriamente</h3>
                     <ul class="list-unstyled profile-list">
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             Swift
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             Java
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             PHP
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             MySql
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             Javascript
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             HTML5
                         </li>
@@ -166,11 +173,11 @@
                 <div class="col-md-6">
                     <h3 class="profile-sub-heading">Conheço</h3>
                     <ul class="list-unstyled profile-list">
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             Python
                         </li>
-                        <li>
+                        <li class="wow fadeInRight">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                             C#
                         </li>
@@ -198,21 +205,21 @@
                     </div>
 
                     <div class="cards">
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>10/2007 até 08/2018</h4>
                             <p>
                                 <span class="timeline-role">Motorista de Pesados</span>
                                 <br>Urbanos, Trofa
                             </p>
                         </div>
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>09/2015 até Atualidade</h4>
                             <p>
                                 <span class="timeline-role">Full Stack IT</span>
                                 <br>Freelancer
                             </p>
                         </div>
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>10/2019 até Atualidade</h4>
                             <p>
                                 <span class="timeline-role">Repositor (part-time)</span>
@@ -237,28 +244,28 @@
                     </div>
 
                     <div class="cards">
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>09/2015 até 07/2017</h4>
                             <p>
                                 <span class="timeline-role">TPSI (Nível 5)</span>
                                 <br>IPMAIA, Maia
                             </p>
                         </div>
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>07/2019</h4>
                             <p>
                                 <span class="timeline-role">iOS Course</span>
                                 <br>Udemy
                             </p>
                         </div>
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>07/2020</h4>
                             <p>
                                 <span class="timeline-role">Web Development</span>
                                 <br>Udemy
                             </p>
                         </div>
-                        <div class="card">
+                        <div class="card wow fadeInUp">
                             <h4>01/2021</h4>
                             <p>
                                 <span class="timeline-role">Laravel Course</span>
@@ -276,21 +283,21 @@
     <div class="gallery">
         <h2 class="profile-heading text-center">Galeria</h2>
         <div class="row justify-content-center">
-            <figure class="col-md-4 gallery-item">
+            <figure class="col-md-4 gallery-item wow fadeInUp">
                 <img src="img/certificates/ipmaia.jpg" class="img-fluid" alt="TPSI Ipmaia"/>
                 <figcaption>TPSI Ipmaia - Melhor Aluno</figcaption>
             </figure>
         </div>
         <div class="row">
-            <figure class="col-md-4 gallery-item">
+            <figure class="col-md-4 gallery-item wow fadeInUp">
                 <img src="img/certificates/iOS.jpeg" class="img-fluid" alt="iOS Udemy"/>
                 <figcaption>Curso iOS - Certificado Udemy</figcaption>
             </figure>
-            <figure class="col-md-4 gallery-item">
+            <figure class="col-md-4 gallery-item wow fadeInUp">
                 <img src="img/certificates/web.jpeg" class="img-fluid" alt="Web Udemy"/>
                 <figcaption>Curso Web - Certificado Udemy</figcaption>
             </figure>
-            <figure class="col-md-4 gallery-item">
+            <figure class="col-md-4 gallery-item wow fadeInUp">
                 <img src="img/certificates/laravel.jpeg" class="img-fluid" alt="Laravel Udemy"/>
                 <figcaption>Curso Laravel - Certificado Udemy</figcaption>
             </figure>
@@ -298,7 +305,55 @@
     </div>
 </section>
 
+<section class="projects-section container-fluid">
+<div class="container">
+    <h2 class="sub-heading">Projetos</h2>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <ul class="list-unstyled projects-list">
+                <li>
+                    <h2 class="text-white">iOS <small class="text-small">Clique nos projetos para ver</small></h2>
+                </li>
+                <li class="wow fadeInRight project-li" id="video1" onclick="changeVideo(1)">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    Pokemon 3D
+                    <br>
+                    <small>ARKit2 Live Tracking</small>
+                </li>
+                <li class="wow fadeInRight project-li" id="video2" onclick="changeVideo(2)">
+                    Magical Newspaper
+                    <br>
+                    <small>ARKit2 Live Video</small>
+
+                </li>
+                <li class="wow fadeInRight project-li" id="video3" onclick="changeVideo(3)">
+                    Clima
+                    <br>
+                    <small>Api Integration (Weather API), Json Parser, CoreLocation</small>
+                </li>
+                <li class="wow fadeInRight project-li" id="video4" onclick="changeVideo(4)">
+                    Todoey
+                    <br>
+                    <small>Data Persistance (Realm)</small>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <video controls autoplay muted loop class="video-player" id="video-player">
+                <source id="video-source" src="videos/Poke3D.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
 <!-- Bootstrap -->
 <script src="js/bootstrap.js"></script>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
 </body>
 </html>
