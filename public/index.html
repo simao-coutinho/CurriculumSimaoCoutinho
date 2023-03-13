@@ -114,7 +114,7 @@
         <div class="col-md-6">
             <h2 class="profile-heading wow fadeIn">Acerca de mim</h2>
             <p class="profile-description wow fadeIn">
-                Formado com distinção já conto com quase 5 anos de programação Android, Windows (C#) Swift (iOS) e
+                Formado com distinção já conto com mais de <span id="years">5</span> anos de programação Android, Windows (C#) Swift (iOS) e
                 PHP com a framework Laravel.<br>Já conto com 10 aplicações nativas android (JAVA) e outras 10 iOS
                 (SWIFT)
                 publicadas e com 25 projetos web publicados.
@@ -395,5 +395,17 @@
 
 <!-- Scripts -->
 <script src="js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script>
+    function setYears() {
+        var a = moment()
+        var b = moment([2017, 0])
+        document.getElementById("years").innerHTML = a.diff(b, 'years')
+    }
+
+    setYears()
+</script>
 </body>
 </html>
