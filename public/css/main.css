@@ -282,6 +282,11 @@ color: var(--c-primary);
     font-size: 2.2rem;
 }
 
+.sub-sub-heading {
+    color: white;
+    text-transform: uppercase;
+}
+
 .timeline-sub-heading {
     text-align: center;
     color: white;
@@ -372,10 +377,16 @@ figcaption {
 }
 /* endregion */
 
-/* region Projects */
-.projects-section {
+/* region published projects */
+.published-projects-section {
     padding: 120px 16px;
     background-image: -webkit-linear-gradient(0deg, var(--c-primary) 0%, var(--c-primary-ligther) 100%);
+}
+/* endregion */
+
+/* region Experimental Projects */
+.projects-section {
+    padding: 120px 16px;
     max-height: 740px;
 }
 
@@ -385,7 +396,6 @@ figcaption {
 }
 
 .projects-list li {
-    color: white;
     font-size: 1.6rem;
     margin-bottom: 16px;
     font-weight: 500;

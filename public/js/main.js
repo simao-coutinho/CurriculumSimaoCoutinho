@@ -32,4 +32,10 @@ function changeVideo(id) {
     li.innerHTML = '<ion-icon name="checkmark-circle-outline" role="img" class="md hydrated" aria-label="checkmark circle outline"></ion-icon>' + li.innerHTML
 }
 
+function setYears() {
+    var a = moment()
+    var b = moment([2015, 0])
+    document.getElementById("years").innerHTML = a.diff(b, 'years')
+}
 
+setYears()
