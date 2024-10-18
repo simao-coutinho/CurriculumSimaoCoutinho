@@ -545,5 +545,16 @@
 <script src="js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script>
+    // We gonna calculate the years
+    setYears()
+
+    function setYears() {
+        var a = moment()
+        var b = moment([2015, 0])
+        document.getElementById("years").innerHTML = a.diff(b, 'years')
+    }
+</script>
 </body>
 </html>
